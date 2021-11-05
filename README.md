@@ -25,8 +25,17 @@ npm install --save request-promise-native
         >如需寫入nohub的log可在monitor_start.sh的nohup node req.js & 後面接上 >> path/nohub.log 2>&1 &
 
 4. script使用方式
-總共有四個script能使用，直接下./sortxxx即可執行，根據提示進行操作即可
 
+總共有五個script能使用，直接下./sortxxx即可執行，根據提示進行操作即可。
+
+其中有一份是叫log_anal.sh，以下簡單介紹使用方式
+```shell
+# 簡單做ip時段排序
+./log_anal.sh path/your_log
+
+# 針對特定時段查詢出現的ip
+./log_anal.sh path/your_log "yyyy-mm-dd HH:MM:ss"
+```
 ## 參考資料
 * [ request-promise-native - npm (npmjs.com)](https://www.npmjs.com/package/request-promise-native)
 * [DNS | Node.js v16.8.0 Documentation (nodejs.org)](https://nodejs.org/api/dns.html#dns_dns_lookup_hostname_options_callback)
