@@ -1,0 +1,19 @@
+path/logs/*.log {
+        daily
+        missingok
+        rotate 183
+        compress
+        delaycompress
+        notifempty
+        su root root
+}
+
+path/nohup_logs/*.log {
+        daily
+        missingok
+        rotate 183
+        compress
+        delaycompress
+        notifempty
+        su root root
+}
