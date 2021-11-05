@@ -2,6 +2,13 @@
 
 此demo是透過node-js套件[request-promise-native]每秒送request，並解析response的請求耗時，寫成log，再透過shell script分析log查出慢秒狀態
 
+* dns: DNS lookup 花費的時間
+* wait: socket 初始化花費的時間
+* tcp: TCP connection 花費的時間
+* firstByte: HTTP server response 花費的時間
+* download: HTTP download 花費的時間)
+* total: 全部花費的時間
+
 ## quick start
 1. 安裝node-js所需套件
 ```shell
